@@ -1,0 +1,12 @@
+@keyframes animacao {
+    from { background-color: purple; }
+    to { background-color: yellow; }
+}
+
+.animation-div {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    animation-name: animacao;
+    animation-duration: 5s;
+}
