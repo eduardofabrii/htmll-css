@@ -1,0 +1,306 @@
+@font-face {
+    font-family: 'SF-Pro';
+    src: url(../fonts/SF-Pro.ttf);
+}
+
+:root {
+    --primary-color: #0f172a;
+    --secondary-color: #fff;
+    --tertiary-color: ;
+}
+
+html {
+    font-family: 'SF-Pro';
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin: 10px 0px 0px 0px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Sidebar */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+#sidebar a {
+    font: 1.2rem 'SF-Pro';
+    border-radius: 20px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 20px;
+}
+
+#sidebar a:hover {
+    background-color: #1a2438;
+}
+
+#sidebar li {
+    margin: 35px;
+}
+
+.logo-doceria {
+    border-radius: 50%;
+    align-self: flex-start; /* Move a logo para o topo */
+    margin-top: 1.5rem;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 120px;
+}
+
+/* Main */
+.content {
+    position: absolute;
+    left: 290px;
+    width: calc(100% - 300px);
+}
+
+.content h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+.content p {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+section {
+    padding-left: 50px;
+}
+
+/* Sessão Home */
+#sessao-home {
+    padding-left: 0;
+}
+
+.sessao-home-content {
+    padding-left: 50px;
+}
+
+#sessao-home .sessao-home-banner {
+    background-image: url(/doceria-do-dudu/images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+#sessao-home h1 {
+    margin-top: 70px;
+}
+
+#sessao-home .sessao-home-minibanner, #sessao-sobre .sessao-sobre-minibanner {
+    background-image: url(/doceria-do-dudu/images/doce1.png);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 400px;
+    margin: 15px 5px 15px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    float: left;
+}
+
+#sessao-home .sessao-home-descricao {
+    position: absolute;
+    left: 370px;
+    padding: 10px 20px 0px 0px;
+}
+
+#sessao-home .sessao-home-descricao p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+#sessao-home::after, #sessao-sobre::after, #sessao-produtos::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+#sessao-home .sessao-home-descricao, #sessao-sobre .sessao-sobre-descricao {
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Sessão Sobre */
+#sessao-sobre .sessao-sobre-descricao {
+    position: absolute;
+    right: 680px;
+    margin: 0px 0px 0px 50px;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+#sessao-sobre .sessao-sobre-minibanner {
+    float: right;
+    margin-right: 30px;
+    height: 430px;
+    background-size: cover;
+    background-position: center;
+}
+
+#sessao-sobre #minibanner1 {
+    background-image: url(/doceria-do-dudu/images/doce2.png);
+}
+
+#sessao-sobre #minibanner2 {
+    background-image: url(/doceria-do-dudu/images/doce3.png);
+}
+
+#confira-os-sabores button {
+    float: left;
+    background-color: var(--primary-color);
+    color: var(--secondary-color); 
+    padding: 15px 20px;
+    border: 1px solid var(--secondary-color); 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-size: 1.2rem; 
+    transition: background-color 0.5s;
+}
+
+#confira-os-sabores button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Sessão Produtos */
+#sessao-produtos .sessao-produtos-item1.banner-galeria {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 285px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#sessao-produtos .sessao-produtos-item2.banner-galeria {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 490px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#sessao-produtos .sessao-produtos-item1.banner-galeria, #sessao-produtos .sessao-produtos-item2.banner-galeria {
+    display: inline-block;
+    align-items: center;
+    margin: 0px 20px 20px 0px;
+}
+
+#sessao-produtos #produto1 {
+   background-image: url(/doceria-do-dudu/images/doce6.png);
+}
+
+#sessao-produtos #produto2 {
+   background-image: url(/doceria-do-dudu/images/doce5.png);
+}
+
+#sessao-produtos #produto3 {
+   background-image: url(/doceria-do-dudu/images/doce7.png);
+}
+
+#sessao-produtos #produto4 {
+   background-image: url(/doceria-do-dudu/images/doce8.png);
+}
+
+#sessao-produtos #produto5 {
+   background-image: url(/doceria-do-dudu/images/doce9.png);
+}
+
+#sessao-produtos #produto6 {
+    background-image: url(/doceria-do-dudu/images/doce13.png);
+}
+
+#sessao-produtos #produto7 {
+    background-image: url(/doceria-do-dudu/images/doce11.png);
+}
+
+#sessao-produtos #produto8 {
+    background-image: url(/doceria-do-dudu/images/doce12.png);
+}
+
+/* Sessão Contato */
+#sessao-contato #form-contato {
+    width: 500px;
+}
+
+#form-contato input[type="text"], #form-contato input[type="email"], #form-contato textarea {
+    font-family: 'sf-pro';
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+#form-contato button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color); 
+    padding: 15px 20px;
+    border: 1px solid var(--secondary-color); 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-size: 1.2rem; 
+    transition: background-color 0.5s;
+}
+
+#form-contato button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0px 20px;
+}
