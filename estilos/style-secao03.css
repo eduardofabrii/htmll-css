@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'SFPRO';
+    src: url(../fontes/SF-Pro.ttf);
+}
+
+@keyframes animacao {
+    from { background-color: purple; }
+    to { background-color: yellow; }
+}
+
+@keyframes animacao2 {
+    0% {}
+    30% { background-color: blue; }
+    80% { left: 100px; background-color: aqua;}
+    100% { height: 50px; }
+}
+
+@keyframes animacao3 {
+    from { left: 0px;}
+    to {left: 200px; background-color: green;}
+}
+
+@keyframes animacao4 {
+    from { left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes animacao5 {
+    0% {left: 0px;}
+    25% {left: 20px; background-color: beige;}
+    50% {left: 80px; background-color: bisque;}
+    80% {left: 80px; background-color: orange;}
+    100% {left: 50px; background-color: red;}
+}
+
+* {
+    font-family: 'SFPRO';
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: relative;
+    animation-name: animacao4;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+    border: 1.5px solid black;
+    text-align: center;
+    line-height: 100px;
+}
+
+.animation-div {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    animation-name: animacao;
+    animation-duration: 5s;
+}
+
+.animation-div2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-name: animacao2;
+    animation-duration: 7s;
+}
+
+.animation-div3 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-name: animacao3;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#div-animation4 {
+    animation-timing-function: linear;
+}
+
+#div-animation5 {
+    animation-timing-function: ease;
+}
+
+#div-animation6 {
+    animation-timing-function: ease-in;
+}
+
+#div-animation7 {
+    animation-timing-function: ease-out;
+}
+
+#div-animation8 {
+    animation-timing-function: ease-in-out;
+}
+
+#div-animation9 {
+    background-color: darkblue;
+    width: 100px;
+    height: 100px;
+    animation: animacao5 5s ease-in-out 4s infinite;
+    text-align: center;
+}
+
+button.btn {
+    width: 100px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.789);
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+button.btn:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.789);
+    border: 1px solid rgba(0, 0, 0, 0.789);
+}
+
+#box-teste {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    line-height: 100px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+#box-teste:hover {
+    width: 500px;
+}
+
+/* Calc */
+.div-calc {
+    height: 250px;
+    width: 500px;
+    position: relative;
+    margin: 20px;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.innerdiv-calc {
+    height: 50px;
+    margin: 10px;
+    background-color: darkblue;
+    position: relative;
+}
+
+.calc1 {
+    width: calc(50% + 50px);
+}
+
+.calc2 {
+    width: calc(45% - 15px);
+}
+
+.calc3 {
+    width: calc(45% * 2);
+}
+
+.calc4 {
+    width: calc(50% / 2);
+}
+
+/* Gradient */
+.gradient-box {
+    width: 500px;
+    height: 200px;
+    margin: 20px;
+}
+
+.gradient1 {
+    background: linear-gradient(to right, red, yellow);
+}
+
+.gradient2 {
+    background: linear-gradient(to left, red, yellow);
+}
+
+.gradient3 {
+    background: linear-gradient(to top, red, yellow);
+}
+
+.gradient4 {
+    background: linear-gradient(to bottom, red, yellow);
+}
+
+.gradient5 {
+    background: linear-gradient(to top right, red, yellow);
+}
+
+.gradient6 {
+    background: radial-gradient(circle, red, yellow);
+}
+
+.gradient7 {
+    background: radial-gradient(circle at 50px 50px, red, yellow);
+}
+
+.gradient8 {
+    background: radial-gradient(circle at 50% 50%, red, yellow);
+}
+
+.box-border-radius {
+    width: 100%;
+    height: 500px;
+    background-color: seagreen;
+    border-top-right-radius: 400px;
+    border-bottom-left-radius: 500px;
+    text-align: center;
+    line-height: 500px;
+}
+
+/* Media Query */
+
+.mediaquery {
+    width: 1200px;
+    height: 200px;
+    background-color: red;
+}
+
+@media (max-width: 1000px) {
+    .mediaquery {
+        width: 500px;
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 768px) {
+    .mediaquery {
+        width: 300px;
+        background-color: green;
+    }
+}
+
+@media (max-width: 512px) {
+    .mediaquery {
+        width: 200px;
+        background-color: pink;
+    }
+}
