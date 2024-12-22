@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'SF-Pro';
+    src: url(/fontes/SF-Pro.ttf);
+}
+
+* {
+    font-family: 'SF-Pro';
+    font-size: 1.5em;
+    color: #333;
+}
+
+body {
+    background-color: #DDD;
+}
+
+.container {
+    display: flex;
+    background-color: aliceblue;
+    width: 100%;
+    height: 300px;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    width: 100px;
+    margin: 10px;
+}
+
+.first {
+    background-color: red;
+}
+
+.second {
+    background-color: blue;
+    align-self: flex-start;
+}
+
+.third {
+    background-color: green;
+    align-self: self-end;
+}
