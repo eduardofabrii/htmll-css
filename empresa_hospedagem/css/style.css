@@ -1,0 +1,415 @@
+@font-face {
+    font-family: 'SF-Pro';
+    src: url(/fontes/SF-Pro.ttf);
+}
+
+:root {
+    --primary-color: #020617;
+    --secondary-color: #6c757d;
+}
+
+html {
+    font: bold 16px 'SF-Pro', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden !important; 
+}
+
+/* Header / Navbar */
+.navbar-container {
+    display: flex;
+    background-color: var(--primary-color);
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-items a {
+    color: white;
+    box-shadow: white 0px 0px 0px 0px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar-items a:hover {
+    color: var(--secondary-color);
+}
+
+a.btn-login {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+a.btn-login:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Banner */
+.banner {
+    background-image: url(/empresa_hospedagem/images/city.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.titulo-main {
+    content: "";
+    display: block;
+    clear: both;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+/* Section Especialidades */
+.especialidades-content {
+    padding: 50px 0;
+}
+
+.especialidades-content ul {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.especialidades-content ul li {
+    flex: 1 1 200px;
+    margin: 40px;
+    border-radius: 10px;
+}
+
+.especialidades-content h3 {
+    color: var(--primary-color);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.especialidades-content p {
+    color: var(--secondary-color);
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.fas {
+    font-size: 50px;
+}
+
+.fa-shield-alt {
+    color: green;
+}
+
+.fa-rocket {
+    color: orange;
+}
+
+.fa-comments {
+    color: blue;
+}
+
+/* Section Preços */
+.prices-content h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 40px;
+    margin: 50px 0;
+}
+
+.planos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.plano {
+    flex: 1 1 300px;
+    margin: 20px;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.plan-btn {
+    flex: 1 1 300px;
+    margin: 20px 0px 0px 0px;
+    padding: 20px;
+    color: white;
+    background-color: var(--primary-color);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+
+.plan-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.price {
+    padding: 20px;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.price.padrao {
+    background-color: #8f7f25;
+}
+
+.price.dedicado {
+    background-color: #ae4822;
+}
+
+.price.plus {
+    background-color: #216721;
+}
+
+.price.cloud {
+    background-color: #3a3ab5;
+}
+
+.plan-name {
+    color: var(--primary-color);
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+/* Section Buscar Dominio */
+.buscar-content {
+    display: flex;
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+    height: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buscar-content h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.buscar-content input {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 330px;
+    margin: 20px;
+    outline: none;
+    font: bold 16px 'SF-Pro', sans-serif;
+}
+
+.buscar-content button {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    font: bold 16px 'SF-Pro', sans-serif;
+}
+
+.buscar-content button:hover {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+}
+
+/* Section Contato */
+.contato-content {
+    display: flex;
+    padding: 50px 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contato-content h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contato-content p {
+    color: var(--secondary-color);
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contato-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.contato-content input, .contato-content textarea {
+    padding: 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    width: 300px;
+    margin: 5px;
+    outline: none;
+    font: bold 16px 'SF-Pro', sans-serif;
+}
+
+.contato-content button {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    font: bold 16px 'SF-Pro', sans-serif;
+}
+
+.contato-content button:hover {
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}	
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo {
+        margin: 10px;
+    }
+
+    .navbar-items a {
+        display: block;
+        margin: 10px 0;
+
+    }
+
+    .btn-login {
+        display: block;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .banner {
+        height: 300px;
+    }
+
+    .titulo-main {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .especialidades-content ul li {
+        margin: 20px;
+    }
+
+    .especialidades-content h3 {
+        font-size: 20px;
+    }
+
+    .especialidades-content p {
+        font-size: 16px;
+    }
+
+    .prices-content h2 {
+        font-size: 30px;
+    }
+
+    .plan-name {
+        font-size: 20px;
+    }
+
+    .buscar-content h2 {
+        font-size: 30px;
+    }
+
+    .buscar-content input {
+        width: 250px;
+    }
+
+    .buscar-content button {
+        padding: 10px 15px;
+    }
+
+    .contato-content h2 {
+        font-size: 30px;
+    }
+
+    .contato-content p {
+        font-size: 16px;
+    }
+
+    .contato-content input, .contato-content textarea {
+        width: 250px;
+    }
+
+    .contato-content button {
+        padding: 10px 15px;
+    }
+    
+}
+
+
+
