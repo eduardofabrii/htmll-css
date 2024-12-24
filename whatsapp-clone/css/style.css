@@ -13,6 +13,7 @@
 }
 
 body {
+    overflow: hidden;
     font: 16px 'SF-Pro';
     font-weight: bold;
 }
@@ -70,6 +71,11 @@ body {
     justify-content: space-between;
     margin-right: 30px;
     justify-content: end;
+}
+
+.fas:hover {
+    color: grey;
+    cursor: pointer;
 }
 
 .auxicons-toolbar-container i {
@@ -258,9 +264,10 @@ body {
 .chat-content {
     width: 100%;
     height: calc(100% - 120px);
+    background-color: rgba(136, 91, 8, 0.219);
     overflow-y: auto;
     box-sizing: border-box;
-    padding: 10px;
+    position: relative;
 }
 
 .chat-content p {
@@ -276,14 +283,19 @@ body {
 .messages {
     display: flex;
     flex-direction: column;
-    position: relative;
-    padding: 40px;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .message {
     padding: 5px;
     border-radius: 10px;
     max-width: 70%;
+    margin: 0px 30px 20px 30px;
 }
 
 .message.received {
@@ -305,10 +317,10 @@ p.message-time {
 .bg-image {
     background-image: url(/whatsapp-clone/images/background_whats.png);
     background-repeat: repeat;
+    position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.1;
-    position: absolute;
 }
 
 .chat-input {
@@ -347,6 +359,7 @@ p.message-time {
     position: absolute;
     right: 0px;
 } 
+
 
 .fa-solid.fa-paperclip {
     width: 70px;
