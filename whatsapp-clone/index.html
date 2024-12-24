@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>WhatsApp Web</title>
+</head>
+<body>
+    <h1>WhatsApp</h1>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="toolbar-container">
+				<img class="user-photo user" src="images/avatar1.png" alt="Usuário">
+                <div class="auxicons-toolbar-container">
+					<i class="fas fa-spinner"></i>
+					<i class="fas fa-comment-alt"></i>
+					<i class="fas fa-ellipsis-v"></i>
+				</div>
+			</div>
+
+            <div class="notification-container">
+				<i class="fas fa-bell-slash"></i>
+				<p class="receive-notification">Receba notificações de novas mensagens</p>
+				<p class="activate-notification">Ativar notificações na área de trabalho <i class="fas fa-angle-right"></i></p>
+			</div>
+
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Pesquisar ou começar uma nova conversa">
+            </div>
+
+            <div class="chat-list">
+                <div class="chat-item active-chat">
+                    <img src="images/avatar2.png" alt="Usuário" class="user-photo">
+                    <div class="user-info">
+                        <p class="username">Juliana Pereira</p>
+                        <p class="user-msg-preview"><i class="fas fa-check-double"></i> Te amo amor <3</p>
+                    </div>
+
+                    <div class="msg-info">
+                        <p class="msg-time">15:00</p>
+                        <p class="msg-pending active-chat"></p>
+                    </div>
+
+                </div>
+
+                <div class="chat-item">
+                    <img src="images/avatar3.png" alt="Usuário" class="user-photo">
+                    <div class="user-info">
+                        <p class="username">Paulo da Costa Oliveira</p>
+                        <p class="user-msg-preview">Estamos aguardando para entrevista!</p>
+                    </div>
+                    
+                    <div class="msg-info">
+                        <p class="msg-time">15:00</p>
+                        <p class="msg-pending">7</p>
+                    </div>
+
+                </div>
+
+                <div class="chat-item">
+                    <img src="images/avatar4.png" alt="Usuário" class="user-photo">
+                    <div class="user-info">
+                        <p class="username">Martina Williams</p>
+                        <p class="user-msg-preview waiting">Digitando...</p>
+                    </div>
+                    
+                    <div class="msg-info">
+                        <p class="msg-time">15:00</p>
+                        <p class="msg-pending">3</p>
+                    </div>
+                </div>
+        </aside>
+
+        <main class="chat-container">
+            <div class="chat-header">
+                <img src="images/avatar2.png" alt="Usuário" class="user-photo">
+                <div class="user-info">
+                    <p class="username">Juliana Pereira</p>
+                    <p class="user-status">Online</p>
+                </div>
+
+                <ul class="chattools-container">
+					<li><i class="fas fa-search"></i></li>
+					<li><i class="fas fa-paperclip"></i></li>
+					<li><i class="fas fa-ellipsis-v"></i></li>
+				</ul>
+            </div>
+
+            <div class="chat-content">
+                <div class="bg-image"></div>
+                <div class="messages">
+                    <div class="message received">
+                        <p class="message-text">Oi amor, tudo bem?</p>
+                        <p class="message-time">15:00</p>
+                    </div>
+
+                    <div class="message sent">
+                        <p class="message-text">Oi meu amor, tudo ótimo e com você?</p>
+                        <p class="message-time">15:00</p>
+                    </div>
+
+                    <div class="message received">
+                        <p class="message-text">Estou bem também, obrigada por perguntar!</p>
+                        <p class="message-time">15:00</p>
+                    </div>
+
+                    <div class="message sent">
+                        <p class="message-text">Que bom, fico feliz em saber!</p>
+                        <p class="message-time">15:00</p>
+                    </div>
+
+                    <div class="message received">
+                        <p class="message-text">Te amo amor <3</p>
+                        <p class="message-time">15:00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <i class="fa-solid fa-grin"></i>
+                <i class="fa-solid fa-paperclip"></i>
+                <input type="text" placeholder="Digite uma mensagem">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
